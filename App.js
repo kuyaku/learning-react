@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from 'react-dom/client';
+
 const heading = React.createElement("h1", {
     id: "heading",
     abc: "xyz",
@@ -6,10 +9,6 @@ const heading = React.createElement("h1", {
 // remember heading is an object and not a html element. It is actually a react element.
 console.log(heading);
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// console.log(root);
-
-// root.render(heading);
 
 // render is actually responsible for converting the react element(object) into dom elements (like h1 tag)
 
@@ -38,7 +37,7 @@ const parent2 = React.createElement("div", {
 }, [React.createElement("h1", {
     id: "head",
     key: 1,
-}, "This is div->div->heading1"),
+}, "This is div->div->heading1 and made this change by kyk!"),
     React.createElement("h2", {id: "head2", key:2},
     "This is div->div->heading2")]
 ),
